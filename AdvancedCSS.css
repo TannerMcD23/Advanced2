@@ -1,0 +1,71 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Universal styles for body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Style for header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* First transition */
+}
+
+header:hover {
+  background-color: #ff6347; /* Tomato color */
+  transform: scale(1.1); /* Grows the header on hover */
+}
+
+/* Style for buttons */
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Second transition */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Animation for a rotating icon */
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Rotating icon */
+.rotate {
+  display: inline-block;
+  font-size: 3rem;
+  animation: rotateIcon 4s linear infinite; /* Animation for continuous rotation */
+}
+
+/* Style for links */
+a {
+  text-decoration: none;
+  color: #007BFF;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
